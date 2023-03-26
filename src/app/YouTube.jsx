@@ -51,15 +51,3 @@ export default function YT({ videoId }) {
     </section>
   );
 }
-
-{
-  /* <Image
-  onClick={onClick}
-  loading="lazy"
-  src={`https://img.youtube.com/vi/${video}/${thumbnailQuality}.jpg`}
-  alt="YouTube Video Thumbnail"
-  width={width}
-  height={height}
-  className="shadow"
-/>; */
-}

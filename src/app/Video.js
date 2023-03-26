@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import styles from "./ResponsiveYouTubeEmbed.module.css";
+import Image from "next/image";
 
 const ResponsiveYouTubeEmbed = ({ videoId, thumbnail }) => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
@@ -28,12 +29,13 @@ const ResponsiveYouTubeEmbed = ({ videoId, thumbnail }) => {
         onLoad={() => setIsVideoLoaded(true)}
       />
       {!isVideoLoaded && (
-        <img
+        <Image
           className={`${styles.thumbnail} ${
             isVideoLoaded ? styles.hidden : ""
           }`}
           src={thumbnail}
           alt="Video thumbnail"
+          fill="true"
         />
       )}
     </div>
