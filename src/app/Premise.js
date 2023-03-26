@@ -1,9 +1,9 @@
-import Heading from "./Heading.jsx";
+import Heading from "../components/Heading.jsx";
 export default function Description() {
   return (
-    <section className="flex flex-col gap-8 items-center">
+    <section className="flex flex-col gap-8 items-center  max-w-5xl">
       <Heading> Premise: </Heading>
-      <article className=" flex flex-col gap-4 bg-stone-900 bg-opacity-80 shadow-lg transition-all  hover:translate-y-1 p-8">
+      <article className=" flex flex-col gap-4 bg-stone-900 bg-opacity-80 shadow-lg transition-all text-xl  hover:translate-y-1 p-8">
         <p>
           {`Get ready to be captivated by "OTTK: The Air, The Mulberry, and
       The Gun Handle," an exhilarating, action-packed Armenian film that

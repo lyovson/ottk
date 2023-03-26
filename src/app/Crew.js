@@ -1,11 +1,11 @@
-import { cast } from "./cast.js";
+import { cast } from "../data/cast.js";
 
-import Card from "./Card.jsx";
-import Heading from "./Heading.jsx";
+import Card from "../components/Card.jsx";
+import Heading from "../components/Heading.jsx";
 
 export default function Crew() {
   return (
-    <section className="flex flex-col gap-8 items-center ">
+    <section className="flex flex-col gap-8 items-center  max-w-5xl">
       <Heading>Crew:</Heading>
       <section className="flex gap-4 flex-row  flex-wrap justify-center max-w-5xl">
         <Card

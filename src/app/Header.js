@@ -1,4 +1,4 @@
-import Heading from "./Heading.jsx";
+import Heading from "../components/Heading.jsx";
 
 export default function Header() {
   return (
@@ -8,7 +8,7 @@ export default function Header() {
           {"Serj Gabyan's"}
         </span>
         <span className="text-9xl block text-red-800 font-heading">OTTK</span>
-        <span className="block text-xl text-stone-300 font-body">
+        <span className="block text-2xl text-stone-300 font-body">
           {'"the air, the mulberry, and the gun handle"'}
         </span>
       </h1>

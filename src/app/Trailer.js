@@ -1,21 +1,12 @@
 "use client";
 
-import YouTube from "react-youtube";
 import { useState } from "react";
-
 import Image from "next/image";
+import YouTube from "react-youtube";
 
-import Heading from "./Heading";
+import Heading from "../components/Heading";
 
-const videoOptions = {
-  width: "100%",
-  height: "100%",
-  playerVars: {
-    autoplay: 1,
-  },
-};
-
-export default function YT({ videoId }) {
+export default function Trailer({ videoId }) {
   const [ready, setReady] = useState(false);
   const [playing, setPlaying] = useState(false);
 
@@ -30,8 +21,8 @@ export default function YT({ videoId }) {
         <Image
           src={"/images/yt3.png"}
           fill="true"
-          className={`aspect-video w-[100vw] p-8 max-w-5xl transition-all delay-100  -z-10 ${
-            !ready ? "opacity-100 blur-sm" : " opacity-0 "
+          className={`aspect-video w-[100vw]  max-w-5xl transition-all delay-100  -z-10 ${
+            !ready ? "opacity-100 blur" : " opacity-0 "
           }`}
           alt="YouTube Video Thumbnail"
         />
@@ -43,7 +34,7 @@ export default function YT({ videoId }) {
           videoId={videoId}
           className={` mx-auto  
           }`}
-          iframeClassName={`aspect-video w-[100vw] p-8 max-w-5xl transition-all delay-100  ${
+          iframeClassName={`aspect-video w-[100vw]  max-w-5xl transition-all delay-100  ${
             ready ? "opacity-100 h-full " : "opacity-0 h-fit blur-sm"
           }`}
         />

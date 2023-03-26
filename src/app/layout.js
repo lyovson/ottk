@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
     >
       <body>
         <BgImage />
-        <main className="container mx-auto flex gap-10 flex-col backdrop-blur-sm place-items-center text-stone-300 min-w-[350px] max-w-5xl font-body">
+        <main className="container max-w-5xl mx-auto flex gap-10 flex-col  place-items-center text-stone-300  font-body">
           <Header />
           {children}
           <Footer />
