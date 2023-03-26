@@ -1,9 +1,10 @@
 import "./globals.css";
 
-import { Oswald, Lobster } from "next/font/google";
+import { Oswald, Quintessential } from "next/font/google";
 
 const oswald = Oswald({ subsets: ["latin"], variable: "--body-font" });
-const lobster = Lobster({
+
+const quintessential = Quintessential({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--heading-font",
@@ -24,11 +25,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`
     ${oswald.variable} 
-    ${lobster.variable}`}
+    ${quintessential.variable}`}
     >
-      <body>
+      <body className="bg-stone-900">
         <BgImage />
-        <main className="container max-w-5xl mx-auto flex gap-10 flex-col  place-items-center text-stone-300  font-body">
+        <main className=" container max-w-5xl mx-auto flex gap-10 flex-col  place-items-center text-stone-300  font-body">
           <Header />
           {children}
           <Footer />
