@@ -14,12 +14,10 @@ export default function Trailer({ videoId }) {
     <section className="flex flex-col gap-8 items-center w-full   max-w-5xl ">
       <Heading> Trailer: </Heading>
       <aside
-        className={` block relative shadow-lg transition-all hover:translate-y-1 sepia hover:filter-none focus:filter-none  ${
-          !playing ? "sepia" : "filter-none"
-        }`}
+        className={` block relative shadow-lg transition-all hover:translate-y-1 `}
       >
         <Image
-          src={"/images/yt3.png"}
+          src={"/images/yt4.png"}
           fill="true"
           className={`aspect-video w-[100vw]  max-w-5xl transition-all delay-100  -z-10 ${
             !ready ? "opacity-100 blur" : " opacity-0 "

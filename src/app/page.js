@@ -5,9 +5,8 @@ import Crew from "./Crew.js";
 export default function Site() {
   return (
     <>
-      <Premise />
-
       <Trailer videoId="UaP1C6Wuf9o" />
+      <Premise />
 
       <Crew />
     </>

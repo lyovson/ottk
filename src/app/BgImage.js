@@ -4,7 +4,7 @@ export default function bgImage() {
   return (
     <div className="fixed w-screen h-screen -z-10 overflow-hidden blur-sm">
       <Image
-        className="sepia blur-lg"
+        className="grayscale blur-lg"
         src="/images/cast.jpeg"
         fill="true"
         alt="OTTK"

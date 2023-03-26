@@ -4,7 +4,7 @@ export default function Card({ hero, imgClass }) {
   return (
     <article className="p-4  bg-stone-900 bg-opacity-80  shadow-lg transition-all hover:translate-y-1 active:filter-none">
       <Image
-        className={` sepia hover:filter-none ${imgClass}`}
+        className={`  ${imgClass}`}
         src={hero.image}
         width={250}
         height={200}
@@ -13,7 +13,7 @@ export default function Card({ hero, imgClass }) {
       <div>
         <h3 className="text-center py-4">
           {hero.actor}
-          <span className="font-heading uppercase  block text-3xl text-red-800">
+          <span className="font-heading uppercase  block text-3xl text-yellow-600">
             {hero.character}
           </span>
         </h3>
