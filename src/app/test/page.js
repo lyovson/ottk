@@ -14,10 +14,7 @@ import { cast } from "../../data/cast.js";
 
 export default function Test() {
   const [active, setActive] = useState(false);
-  const hero = {
-    ...cast.filter((hero) => hero.character === "onik")[0],
-    image: `/onik/${active ? "onik.jpg" : "onik-bw.jpg"} `,
-  };
+  const hero = { ...cast.filter((hero) => hero.character === "onik")[0] };
   return (
     <>
       <Heading>Onik:</Heading>
@@ -26,11 +23,11 @@ export default function Test() {
         onMouseLeave={() => setActive(false)}
         className="flex gap-4 flex-wrap transition-all "
       >
-        <Card
-          hero={hero}
-          className="transition-all "
-          imgClass="transition-all"
-        />
+        {active ? (
+          <Card hero={{ ...hero, image: "/onik/onik.jpg" }} />
+        ) : (
+          <Card hero={{ ...hero, image: "/onik/onik-bw.jpg" }} />
+        )}
       </section>
       <footer className=" flex justify-center gap-4 text-5xl text-yellow-600">
         <a
