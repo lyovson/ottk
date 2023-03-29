@@ -16,7 +16,7 @@ export default function Test() {
   const [active, setActive] = useState(false);
   const hero = {
     ...cast.filter((hero) => hero.character === "onik")[0],
-    image: `/images/onik/${active ? "onik.jpg" : "onik-bw.jpg"} `,
+    image: `/onik/${active ? "onik.jpg" : "onik-bw.jpg"} `,
   };
   return (
     <>
