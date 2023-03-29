@@ -55,7 +55,7 @@ export default function Test() {
           <FontAwesomeIcon icon={faYoutubeSquare} />
         </a>
         <a
-          href="#"
+          href="https://twitter.com/lyovson"
           target="_blank"
           className="shadow-lg transition-all hover:translate-y-1 active:filter-none"
         >
