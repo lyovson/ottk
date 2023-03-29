@@ -13,7 +13,7 @@ export default function Card({ hero, imgClass }) {
       <div>
         <h3 className="text-center py-4">
           {hero.actor}
-          <span className="font-heading uppercase  block text-3xl text-yellow-600">
+          <span className="font-heading uppercase  block text-3xl text-orange-100 ">
             {hero.character}
           </span>
         </h3>

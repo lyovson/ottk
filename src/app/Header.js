@@ -1,16 +1,19 @@
+import Image from "next/image";
+
 import Heading from "../components/Heading.jsx";
 export default function Header() {
   return (
-    <Heading className="mt-10  ">
-      <h1 className="text-5xl flex flex-col ">
-        <span className="block text-4xl text-stone-300 font-body">
-          {"Serj Gabyan's"}
-        </span>
-        <span className="text-9xl block text-yellow-600 font-heading">
-          OTTK
-        </span>
-        <span className="block text-2xl text-stone-300 font-body">
-          {'"the air, the mulberry, and the gun handle"'}
+    <Heading className="mt-10 flex flex-col items-center justify-center ">
+      <Image
+        src="/logo.png"
+        alt="OTTK Film Logo"
+        width="300"
+        height="300"
+        className=" mx-auto -mt-12"
+      />
+      <h1 className=" -mt-10 mb-10">
+        <span className="block text-2xl text-orange-100 font-body">
+          {'"The Air, The Mulberry, and The Gun Handle"'}
         </span>
       </h1>
     </Heading>
