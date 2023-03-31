@@ -1,12 +1,14 @@
-import Card from "../components/Card.jsx";
-import Heading from "../components/Heading.jsx";
 import { cast } from "../data/cast.js";
+
+import Card from "../components/Card.jsx";
+
+import Heading from "../components/Heading.jsx";
 
 export default function Crew() {
   return (
-    <section className="flex max-w-5xl flex-col items-center  gap-8">
+    <section className="flex flex-col gap-8 items-center  max-w-5xl">
       <Heading>Crew:</Heading>
-      <section className="flex max-w-5xl flex-row  flex-wrap justify-center gap-4">
+      <section className="flex gap-4 flex-row  flex-wrap justify-center max-w-5xl">
         <Card
           hero={{
             actor: "Serj Gabyan",
@@ -31,7 +33,7 @@ export default function Crew() {
         />
       </section>
       <Heading>Cast:</Heading>
-      <section className="flex max-w-5xl flex-wrap justify-center gap-4">
+      <section className="flex gap-4 flex-wrap justify-center max-w-5xl">
         {cast.map((hero) => (
           <Card key={hero.character} hero={hero} />
         ))}

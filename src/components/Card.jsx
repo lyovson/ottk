@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Card({ hero, imgClass }) {
   return (
-    <article className="bg-stone-900  bg-opacity-80 p-4  shadow-lg transition-all hover:translate-y-1 active:filter-none">
+    <article className="p-4  bg-stone-900 bg-opacity-80  shadow-lg transition-all hover:translate-y-1 active:filter-none">
       <Image
         className={`  ${imgClass}`}
         src={hero.image}
@@ -11,9 +11,9 @@ export default function Card({ hero, imgClass }) {
         alt={hero.character}
       />
       <div>
-        <h3 className="py-4 text-center">
+        <h3 className="text-center py-4">
           {hero.actor}
-          <span className="block font-heading  text-3xl uppercase text-orange-100 ">
+          <span className="font-heading uppercase  block text-3xl text-orange-100 ">
             {hero.character}
           </span>
         </h3>

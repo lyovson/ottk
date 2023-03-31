@@ -1,9 +1,6 @@
-import { Oswald, Quintessential } from "next/font/google";
-
-import BgImage from "./BgImage.js";
-import Footer from "./Footer.js";
-import Header from "./Header.js";
 import "./globals.css";
+
+import { Oswald, Quintessential } from "next/font/google";
 
 const oswald = Oswald({ subsets: ["latin"], variable: "--body-font" });
 
@@ -12,6 +9,10 @@ const quintessential = Quintessential({
   weight: ["400"],
   variable: "--heading-font",
 });
+
+import BgImage from "./BgImage.js";
+import Header from "./Header.js";
+import Footer from "./Footer.js";
 
 export const metadata = {
   title: "OTTK",
@@ -28,7 +29,7 @@ export default function RootLayout({ children }) {
     >
       <body className="bg-stone-900">
         <BgImage />
-        <main className=" container mx-auto flex max-w-5xl flex-col place-items-center  gap-10 font-body  text-orange-100">
+        <main className=" container max-w-5xl mx-auto flex gap-10 flex-col  place-items-center text-orange-100  font-body">
           <Header />
           {children}
           <Footer />

@@ -1,6 +1,7 @@
-import Crew from "./Crew.js";
-import Premise from "./Premise.js";
 import Trailer from "./Trailer.js";
+import Premise from "./Premise.js";
+
+import Crew from "./Crew.js";
 
 export default function Site() {
   return (

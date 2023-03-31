@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function bgImage() {
   return (
-    <div className="fixed -z-10 h-screen w-screen overflow-hidden blur-sm">
+    <div className="fixed w-screen h-screen -z-10 overflow-hidden blur-sm">
       <Image
-        className="blur-lg grayscale"
+        className="grayscale blur-lg"
         src="/images/cast.jpeg"
         fill="true"
         alt="OTTK"

@@ -5,7 +5,7 @@ export default function Icon({ icon, url }) {
     <a
       href={url}
       target="_blank"
-      className=" h-[32px] w-[32px] shadow-lg transition-all hover:translate-y-1 active:filter-none"
+      className=" w-[32px] h-[32px] shadow-lg transition-all hover:translate-y-1 active:filter-none"
     >
       <FontAwesomeIcon icon={icon} />
     </a>
