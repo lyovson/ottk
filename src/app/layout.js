@@ -1,9 +1,10 @@
+import "./globals.css";
 import { Oswald, Quintessential } from "next/font/google";
 
 import BgImage from "./BgImage.js";
 import Footer from "./Footer.js";
 import Header from "./Header.js";
-import "./globals.css";
+
 
 const oswald = Oswald({ subsets: ["latin"], variable: "--body-font" });
 
