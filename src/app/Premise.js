@@ -2,9 +2,9 @@ import Heading from "../components/Heading.jsx";
 
 export default function Description() {
   return (
-    <section className=" flex max-w-5xl flex-col items-center  gap-8">
+    <section className=" flex flex-col items-center  gap-8">
       <Heading> Premise: </Heading>
-      <article className="flex flex-col gap-4 bg-stone-900 bg-opacity-80 p-8 text-xl shadow-lg  transition-all hover:translate-y-1">
+      <article className="flex flex-col gap-4 bg-stone-900 bg-opacity-80 p-8 text-xl">
         <p>
           {`Get ready to be captivated by "OTTK: The Air, The Mulberry, and The Gun Handle," an exhilarating action-packed Armenian film that combines the thrill of a heist with the humor of linguistic misadventures. Written and directed by the talented Serj Gabyan, this movie promises to be a rollercoaster ride of excitement, laughter, and suspense.`}
         </p>

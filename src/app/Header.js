@@ -4,17 +4,17 @@ import Heading from "../components/Heading.jsx";
 
 export default function Header() {
   return (
-    <Heading className="mt-10 flex flex-col items-center justify-center ">
+    <Heading className=" flex flex-col items-center justify-center gap-0 ">
       <Image
         src="/logo.png"
         alt="OTTK Film Logo"
-        width="300"
-        height="300"
-        className=" mx-auto -mt-12"
+        width="128"
+        height="128"
+        className=" mx-auto "
       />
-      <h1 className=" -mt-10 mb-10">
-        <span className="block font-body text-2xl text-orange-100">
-          {'"The Air, The Mulberry, and The Gun Handle"'}
+      <h1>
+        <span className="font-body text-2xl text-orange-100">
+          {'OTTK: The Air, The Mulberry, and The Gun Handle"'}
         </span>
       </h1>
     </Heading>

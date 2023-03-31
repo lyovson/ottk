@@ -1,12 +1,25 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
+
+const cardVariants = {
+  initial: { scale: 1 },
+  hover: { scale: 1.1 },
+};
 
 export default function Card({ hero, imgClass }) {
   return (
-    <article className="bg-stone-900  bg-opacity-80 p-4  shadow-lg transition-all hover:translate-y-1 active:filter-none">
+    <motion.article
+      variants={cardVariants}
+      whileHover="hover"
+      initial="initial"
+      className="bg-stone-900  bg-opacity-80 p-4  "
+    >
       <Image
         className={`  ${imgClass}`}
         src={hero.image}
-        width={250}
+        width={200}
         height={200}
         alt={hero.character}
       />
@@ -18,6 +31,6 @@ export default function Card({ hero, imgClass }) {
           </span>
         </h3>
       </div>
-    </article>
+    </motion.article>
   );
 }
