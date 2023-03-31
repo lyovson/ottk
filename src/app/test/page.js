@@ -1,12 +1,13 @@
 "use client";
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
-  faTwitterSquare,
   faFacebookSquare,
   faInstagramSquare,
+  faTwitterSquare,
   faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 import Card from "../../components/Card.jsx";
 import Heading from "../../components/Heading.jsx";
@@ -21,7 +22,7 @@ export default function Test() {
       <section
         onMouseEnter={() => setActive(true)}
         onMouseLeave={() => setActive(false)}
-        className="flex gap-4 flex-wrap transition-all "
+        className="flex flex-wrap gap-4 transition-all "
       >
         {active ? (
           <Card hero={{ ...hero, image: "/onik/onik.jpg" }} />

@@ -1,7 +1,7 @@
 import {
-  faTwitterSquare,
   faFacebookSquare,
   faInstagramSquare,
+  faTwitterSquare,
   faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
