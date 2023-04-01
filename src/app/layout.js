@@ -1,8 +1,8 @@
 import { Oswald, Quintessential } from "next/font/google";
 
+import AnimatedDiv from "../components/AnimatedDiv.jsx";
 import Menu from "../components/Menu.jsx";
 import BgImage from "./BgImage.js";
-import Footer from "./Footer.js";
 import Header from "./Header.js";
 import "./globals.css";
 
@@ -31,8 +31,7 @@ export default function RootLayout({ children }) {
         <BgImage />
         <Header />
         <main className="mx-auto mt-10 flex flex-col place-items-center justify-between gap-10  overflow-hidden  font-body text-orange-100 lg:max-w-3xl xl:max-w-5xl">
-          {children}
-
+          <AnimatedDiv>{children}</AnimatedDiv>
           <Menu active="Case" />
         </main>
       </body>

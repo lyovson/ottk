@@ -14,7 +14,7 @@ import { usePathname } from "next/navigation";
 
 const navItemVariants = {
   initial: { scale: 1, color: "rgb(255 237 213)" },
-  hover: { scale: 1.1, color: "rgb(220 38 38)" },
+  hover: { scale: 1.2, color: "rgb(255 237 213)" },
   active: { scale: 1, color: "rgb(220 38 38)" },
 };
 

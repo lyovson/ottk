@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
 const cardVariants = {
@@ -11,6 +11,7 @@ const cardVariants = {
 export default function Card({ hero, imgClass }) {
   return (
     <motion.article
+      layout
       variants={cardVariants}
       whileHover="hover"
       initial="initial"

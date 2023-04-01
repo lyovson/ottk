@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import YouTube from "react-youtube";
@@ -10,7 +11,7 @@ export default function Trailer({ videoId }) {
   const [ready, setReady] = useState(false);
 
   return (
-    <section className="flex w-full  flex-col items-center gap-8 ">
+    <motion.section className="flex w-full  flex-col items-center gap-8  ">
       <article className={` relative block w-full `}>
         <Image
           src={"/images/yt4.png"}
@@ -31,6 +32,6 @@ export default function Trailer({ videoId }) {
           }`}
         />
       </article>
-    </section>
+    </motion.section>
   );
 }
