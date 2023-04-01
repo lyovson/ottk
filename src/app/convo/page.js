@@ -6,9 +6,10 @@ export default function Contact() {
   return (
     <motion.section
       key="convo "
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      initial={{ y: 300, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: -300, opacity: 0 }}
+      transition={{ duration: 0.5 }}
     >
       Convo
     </motion.section>

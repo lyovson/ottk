@@ -4,8 +4,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
 const cardVariants = {
-  initial: { scale: 1 },
-  hover: { scale: 1.1 },
+  initial: { y: 0 },
+  hover: { y: 5 },
 };
 
 export default function Card({ hero, imgClass }) {

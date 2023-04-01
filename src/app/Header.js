@@ -4,7 +4,10 @@ import Heading from "../components/Heading.jsx";
 
 export default function Header() {
   return (
-    <Heading className=" flex flex-col items-center justify-center gap-0 lg:flex-row lg:justify-center">
+    <Heading
+      layout
+      className=" flex flex-col items-center justify-center gap-0 lg:flex-row lg:justify-center"
+    >
       <Image
         src="/logo.png"
         alt="OTTK Film Logo"

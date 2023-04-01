@@ -13,9 +13,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItemVariants = {
-  initial: { scale: 1, color: "rgb(255 237 213)" },
-  hover: { scale: 1.2, color: "rgb(255 237 213)" },
-  active: { scale: 1, color: "rgb(220 38 38)" },
+  initial: { y: 0, color: "rgb(255 237 213)" },
+  hover: { y: 5, color: "rgb(255 237 213)" },
+  active: { y: 0, color: "rgb(220 38 38)" },
 };
 
 const routeToLabel = (route) => {
