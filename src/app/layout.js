@@ -1,10 +1,10 @@
-import "./globals.css";
 import { Oswald, Quintessential } from "next/font/google";
 
+import AnimatedDiv from "../components/AnimatedDiv.jsx";
+import Menu from "../components/Menu.jsx";
 import BgImage from "./BgImage.js";
-import Footer from "./Footer.js";
 import Header from "./Header.js";
-
+import "./globals.css";
 
 const oswald = Oswald({ subsets: ["latin"], variable: "--body-font" });
 
@@ -27,12 +27,12 @@ export default function RootLayout({ children }) {
     ${oswald.variable} 
     ${quintessential.variable}`}
     >
-      <body className="bg-stone-900">
+      <body className=" bg-stone-900 ">
         <BgImage />
-        <main className=" container mx-auto flex max-w-5xl flex-col place-items-center  gap-10 font-body  text-orange-100">
-          <Header />
-          {children}
-          <Footer />
+        <Header />
+        <main className="mx-auto mt-10 flex flex-col  place-items-center justify-between gap-10 overflow-hidden  p-8 pb-36 font-body text-orange-100 lg:max-w-3xl lg:pb-8 xl:max-w-5xl">
+          <AnimatedDiv>{children}</AnimatedDiv>
+          <Menu active="Case" />
         </main>
       </body>
     </html>
