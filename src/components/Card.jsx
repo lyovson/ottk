@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const cardVariants = {
@@ -15,7 +15,7 @@ export default function Card({ hero, imgClass }) {
       variants={cardVariants}
       whileHover="hover"
       initial="initial"
-      className="bg-stone-900  bg-opacity-80 p-4  "
+      className="bg-stone-900  bg-opacity-80 p-4    "
     >
       <Image
         className={`  ${imgClass}`}

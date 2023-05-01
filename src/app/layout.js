@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <body className=" bg-stone-900 ">
         <BgImage />
         <Header />
-        <main className="mx-auto mt-10 flex flex-col place-items-center justify-between gap-10  overflow-hidden  font-body text-orange-100 lg:max-w-3xl xl:max-w-5xl">
+        <main className="mx-auto mt-10 flex flex-col  place-items-center justify-between gap-10 overflow-hidden  p-8 pb-36 font-body text-orange-100 lg:max-w-3xl lg:pb-8 xl:max-w-5xl">
           <AnimatedDiv>{children}</AnimatedDiv>
           <Menu active="Case" />
         </main>
