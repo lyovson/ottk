@@ -55,7 +55,7 @@ export default function Menu() {
             animate={active === item.label ? "active" : "initial"}
             whileHover="hover"
           >
-            <FontAwesomeIcon icon={item.icon} size="lg" />
+            <FontAwesomeIcon icon={item.icon} size="lg" className="" />
             <span className="text-xs">{item.label}</span>
           </motion.div>
         </Link>
