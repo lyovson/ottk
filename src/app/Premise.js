@@ -1,11 +1,21 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 import Heading from "../components/Heading.jsx";
 export default function Description() {
   return (
+<<<<<<< HEAD
     <section className="flex flex-col gap-8 items-center  max-w-5xl">
       <Heading> Premise: </Heading>
       <article className=" flex flex-col gap-4 bg-stone-900 bg-opacity-80 shadow-lg transition-all text-xl  hover:translate-y-1 p-8">
+=======
+    <motion.section className=" flex flex-col items-center  gap-8">
+      <Heading> Premise: </Heading>
+      <article className="flex flex-col gap-4 bg-stone-900 bg-opacity-80 p-8 text-xl">
+>>>>>>> beta
         <p>
-          {`Get ready to be captivated by "OTTK: The Air, The Mulberry, and The Gun Handle," an exhilarating action-packed Armenian film that combines the thrill of a heist with the humor of linguistic misadventures. Written and directed by the talented Serj Gabyan, this movie promises to be a rollercoaster ride of excitement, laughter, and suspense.`}
+          {`Get ready to be captivated by "OTTK: Mulberry Moonshine," an exhilarating action-packed Armenian film that combines the thrill of a heist with the humor of linguistic misadventures. Written and directed by the talented Serj Gabyan, this movie promises to be a rollercoaster ride of excitement, laughter, and suspense.`}
         </p>
 
         <p>
@@ -21,9 +31,9 @@ export default function Description() {
         </p>
 
         <p>
-          {`So, buckle up and join us on this one-of-a-kind journey, filled with action, humor, and a whole lot of heart. Get ready to experience the wild side of "OTTK: The Air, The Mulberry, and The Gun Handle", and trust me, you'll never forget it!`}
+          {`So, buckle up and join us on this one-of-a-kind journey, filled with action, humor, and a whole lot of heart. Get ready to experience the wild side of "OTTK: Mulberry Moonshine", and trust me, you'll never forget it!`}
         </p>
       </article>
-    </section>
+    </motion.section>
   );
 }
