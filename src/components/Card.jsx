@@ -15,13 +15,13 @@ export default function Card({ hero, imgClass }) {
       variants={cardVariants}
       whileHover="hover"
       initial="initial"
-      className="bg-stone-900  bg-opacity-80 p-4    "
+      className="rounded-xl   bg-stone-900 bg-opacity-80 shadow-lg "
     >
       <Image
-        className={`  ${imgClass}`}
+        className={` rounded-xl  border-hidden ${imgClass}`}
         src={hero.image}
-        width={200}
-        height={200}
+        width={300}
+        height={300}
         alt={hero.character}
       />
       <div>

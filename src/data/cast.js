@@ -14,9 +14,12 @@ const heroes = [
   { character: "bobbie", actor: "Milena Mikaelyan" },
   { character: "bagrat", actor: "Jirayr Babazyan" },
   { character: "ashot", actor: "Arman Ghazaryan" },
+  { character: "gaspar", actor: "Sargis Kirakosyan" },
+  { character: "misha", actor: "Lilit Karapetyan" },
+  { character: "vito", actor: "Arsine Navasardyan" },
 ].sort((a, b) => a.character.localeCompare(b.character));
 
 export const cast = heroes.map((hero) => ({
   ...hero,
-  image: "/images/" + hero.character + ".jpeg",
+  image: "/images/cast/" + hero.character + ".jpg",
 }));
